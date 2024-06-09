@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        string s, t;
+        cin >> s >> t;
+        
+        // Append the string s to itself
+        string doubled_s = s + s;
+        
+        // Check if t is a substring of doubled_s
+        if (doubled_s.find(t) != string::npos) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
+    }
+    return 0;
+}
